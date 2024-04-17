@@ -15,7 +15,7 @@ function App() {
               includeWallets: [
                   {
                       appName: "TobiWallet",
-                      name: "Tobi Wallet",
+                      name: "TobiWallet",
                       imageUrl: "https://wallet.tg/images/logo-288.png",
                       aboutUrl: "https://wallet.tg/",
                       universalLink: "https://t.me/telifidev_bot/wallet",
