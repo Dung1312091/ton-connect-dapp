@@ -44,15 +44,16 @@ export const TonProofDemo = () => {
 				return;
 			}
 
-			if (w.connectItems?.tonProof && 'proof' in w.connectItems.tonProof) {
-				await TonProofDemoApi.checkProof(w.connectItems.tonProof.proof, w.account);
-			}
-
-			if (!TonProofDemoApi.accessToken) {
-				tonConnectUI.disconnect();
-				setAuthorized(false);
-				return;
-			}
+			// if (w.connectItems?.tonProof && 'proof' in w.connectItems.tonProof) {
+			// 	console.log('Teindv tonProof')
+			// 	await TonProofDemoApi.checkProof(w.connectItems.tonProof.proof, w.account);
+			// }
+			//
+			// if (!TonProofDemoApi.accessToken) {
+			// 	tonConnectUI.disconnect();
+			// 	setAuthorized(false);
+			// 	return;
+			// }
 
 			setAuthorized(true);
 		}), [tonConnectUI]);
