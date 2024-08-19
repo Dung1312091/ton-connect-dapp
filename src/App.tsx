@@ -23,11 +23,12 @@ function App() {
                       bridgeUrl: "https://bridge.tonapi.io/bridge",
                       platforms: ["ios", "android", "macos", "windows", "linux"]
                   }
-              ]
+              ],
           }}
           actionsConfiguration={{
             //   twaReturnUrl: 'https://t.me/mpc_wallet_connect_bot/tobi_wallet',
-            returnStrategy: 'back'
+            returnStrategy: 'none'
+            
 
           }}
       >
