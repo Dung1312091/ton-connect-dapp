@@ -9,7 +9,9 @@ import {useEffect, useState} from "react";
 function App() {
     const [returnStrategy, setReturnStrategy] = useState("back")
     return (
-      <TonConnectUIProvider
+      <div>
+       
+              <TonConnectUIProvider
           manifestUrl="https://ton-connect.github.io/demo-dapp-with-react-ui/tonconnect-manifest.json"
           uiPreferences={{ theme: THEME.DARK }}
           walletsListConfiguration={{
@@ -34,29 +36,13 @@ function App() {
       >
         <div className="app">
             <Header />
-            <div style={{
-              color: '#fff',
-              display: 'flex',
-              justifyContent: 'center',
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}>
-             <p style={{
-              fontSize: '20px'
-             }}> Connect Return Strategy</p>
-             <input value={returnStrategy} onChange={e => setReturnStrategy(e.target.value)} style={{
-              height: 48,
-              fontSize: 18,
-              paddingLeft: 10,
-              marginBottom: 12
-             }} placeholder='input return strategy'/>
-             <strong>Note: There are 3 values valid for input: back, none, link (ex: "https://www.google.com.vn/")</strong>
-              </div>
             <TxForm />
             <TonProofDemo />
             <Footer />
         </div>
       </TonConnectUIProvider>
+      </div>
+      
   )
 }
 
