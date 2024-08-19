@@ -7,7 +7,7 @@ import {TonProofDemo} from "./components/TonProofDemo/TonProofDemo";
 import {useEffect} from "react";
 
 function App() {
-    console.log("-------5")
+    console.log("-------returnStrategy none")
     return (
       <TonConnectUIProvider
           manifestUrl="https://ton-connect.github.io/demo-dapp-with-react-ui/tonconnect-manifest.json"
