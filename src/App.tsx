@@ -19,7 +19,7 @@ function App() {
                       name: "TobiWallet",
                       imageUrl: "https://wallet.tg/images/logo-288.png",
                       aboutUrl: "https://wallet.tg/",
-                      universalLink: "https://t.me/telifidev_bot/wallet",
+                      universalLink: "https://t.me/telifidev_bot/local",
                       bridgeUrl: "https://bridge.tonapi.io/bridge",
                       platforms: ["ios", "android", "macos", "windows", "linux"]
                   }
