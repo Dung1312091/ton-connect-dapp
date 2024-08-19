@@ -7,6 +7,7 @@ import {TonProofDemo} from "./components/TonProofDemo/TonProofDemo";
 import {useEffect} from "react";
 
 function App() {
+    console.log("-------1")
     return (
       <TonConnectUIProvider
           manifestUrl="https://ton-connect.github.io/demo-dapp-with-react-ui/tonconnect-manifest.json"
@@ -26,6 +27,7 @@ function App() {
           }}
           actionsConfiguration={{
             //   twaReturnUrl: 'https://t.me/mpc_wallet_connect_bot/tobi_wallet',
+            returnStrategy: 'back'
 
           }}
       >
