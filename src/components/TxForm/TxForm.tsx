@@ -15,11 +15,9 @@ const defaultTx: SendTransactionRequest = {
       // The receiver's address.
       address: 'UQA16qO8E1RejdKV0oSE6hbY-TQkIH6apP_w3YuRw7N6gkJs',
       // Amount to send in nanoTON. For example, 0.005 TON is 5000000 nanoTON.
-      amount: '5000000',
+      amount: '50',
       // (optional) State initialization in boc base64 format.
-      stateInit: 'te6cckEBBAEAOgACATQCAQAAART/APSkE/S88sgLAwBI0wHQ0wMBcbCRW+D6QDBwgBDIywVYzxYh+gLLagHPFsmAQPsAlxCarA==',
       // (optional) Payload in boc base64 format.
-      payload: 'te6ccsEBAQEADAAMABQAAAAASGVsbG8hCaTc/g==',
     },
 
     // Uncomment the following message to send two messages in one transaction.
@@ -53,7 +51,9 @@ export function TxForm() {
       <ReactJson theme="ocean" src={defaultTx} onEdit={onChange} onAdd={onChange} onDelete={onChange}/>
 
       {wallet ? (
-        <button onClick={() => tonConnectUi.sendTransaction(tx)}>
+        <button onClick={() => tonConnectUi.sendTransaction(tx, {
+          returnStrategy: 'none'
+        })}>
           Send transaction
         </button>
       ) : (

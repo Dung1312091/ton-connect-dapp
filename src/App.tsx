@@ -19,7 +19,7 @@ function App() {
                       name: "TobiWallet",
                       imageUrl: "https://wallet.tg/images/logo-288.png",
                       aboutUrl: "https://wallet.tg/",
-                      universalLink: "https://t.me/telifidev_bot/local",
+                      universalLink: "https://t.me/telifidev_bot/wallet",
                       bridgeUrl: "https://bridge.tonapi.io/bridge",
                       platforms: ["ios", "android", "macos", "windows", "linux"]
                   }
@@ -27,7 +27,7 @@ function App() {
           }}
           actionsConfiguration={{
             //   twaReturnUrl: 'https://t.me/mpc_wallet_connect_bot/tobi_wallet',
-            returnStrategy: 'https://t.me/telifidev_bot/local'
+            returnStrategy: 'back'
             
 
           }}
