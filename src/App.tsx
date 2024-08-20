@@ -8,6 +8,7 @@ import {useEffect, useState} from "react";
 
 function App() {
     const [returnStrategy, setReturnStrategy] = useState("back")
+    console.log('111')
     return (
       <div>
        
@@ -27,12 +28,12 @@ function App() {
                   }
               ],
           }}
-          actionsConfiguration={{
-            //   twaReturnUrl: 'https://t.me/mpc_wallet_connect_bot/tobi_wallet',
-            returnStrategy: returnStrategy as any
+          // actionsConfiguration={{
+          //   //   twaReturnUrl: 'https://t.me/mpc_wallet_connect_bot/tobi_wallet',
+          //   returnStrategy: returnStrategy as any
             
 
-          }}
+          // }}
       >
         <div className="app">
             <Header />

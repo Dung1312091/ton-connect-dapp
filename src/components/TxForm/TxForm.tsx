@@ -52,7 +52,7 @@ export function TxForm() {
 
       {wallet ? (
         <button onClick={() => tonConnectUi.sendTransaction(tx, {
-          returnStrategy: 'none'
+          returnStrategy: 'back'
         })}>
           Send transaction
         </button>
